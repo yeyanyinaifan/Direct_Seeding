@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  游戏直播
+//
+//  Created by tarena on 16/9/8.
+//  Copyright © 2016年 tarena. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define kMargin 10 
+/*******    屏幕的宽高   *********/
+#define kScreenW    ([UIScreen mainScreen].bounds.size.width)
+#define kScreenH    ([UIScreen mainScreen].bounds.size.height)
+
+#import <UIImageView+WebCache.h>
+#import "WebUtils.h"
+#import <SVPullToRefresh.h>
+/********   快速三原色定制颜色   *********/
+#define kRGBA(r, g, b, a) ([UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a])
+#define LoadingImage [UIImage imageNamed:@"主播正在赶来"]
+
+#define URL_CategorysPath @"http://www.quanmin.tv/json/categories/list.json"
+#define URL_RoomsPath @"http://www.quanmin.tv/json/play/list.json"
+#define URL_CategoryRoomsPath @"http://www.quanmin.tv/json/categories/%@/list_%d.json"
+#define URL_SearchRoomsPath  @"http://www.quanmin.tv/api/v1"
+#define URL_homePath @"http://www.quanmin.tv/json/page/app-index/info.json"
+
+#define MainColor [UIColor colorWithRed:254.0/255 green:49.0/255 blue:32.0/255 alpha:1]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
